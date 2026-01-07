@@ -1,0 +1,132 @@
+---
+import '../styles/global.css'
+import TopNav from '../components/TopNav'
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Conoce más sobre Iluminando - Especialistas en luces de neón y sublimación" />
+		<title>Nosotros | Iluminando</title>
+	</head>
+	<body class="bg-black text-white">
+		<TopNav client:load />
+
+		<!-- Hero Nosotros -->
+		<section class="pt-24 pb-16 px-4 bg-gradient-to-b from-black to-zinc-900">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-5xl md:text-6xl font-bold mb-6">
+					<span class="text-white">SOBRE</span>
+					<span class="text-[#ffbb01] block">ILUMINANDO</span>
+				</h1>
+				<p class="text-xl text-gray-300">
+					Más de 5 años iluminando ideas y capacitando emprendedores
+				</p>
+			</div>
+		</section>
+
+		<!-- Contenido Nosotros -->
+		<section class="py-20 px-4">
+			<div class="max-w-4xl mx-auto">
+				<div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+					<div>
+						<h2 class="text-3xl font-bold mb-6 text-white">Nuestra Historia</h2>
+						<p class="text-gray-400 mb-4">
+							Iluminando nació en 2019 con la visión de combinar el arte de las luces de neón 
+							con las técnicas modernas de sublimación. Lo que comenzó como un pequeño taller 
+							familiar, hoy es un referente en personalización creativa.
+						</p>
+						<p class="text-gray-400">
+							Creemos que cada idea merece brillar, y por eso nos dedicamos a transformar 
+							conceptos en realidades tangibles que iluminan espacios y corazones.
+						</p>
+					</div>
+					<div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-800">
+						<div class="text-5xl text-[#ffbb01] font-bold mb-4">2019</div>
+						<p class="text-gray-300">Año de fundación</p>
+					</div>
+				</div>
+
+				<!-- Misión y Visión -->
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-[#ffbb01] transition-all duration-300">
+						<h3 class="text-2xl font-bold mb-4 text-[#ffbb01]">Misión</h3>
+						<p class="text-gray-400">
+							Ofrecer soluciones creativas de personalización mediante luces de neón 
+							y técnicas de sublimación, capacitando a emprendedores y llevando 
+							brillo a cada proyecto.
+						</p>
+					</div>
+					<div class="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-[#ffbb01] transition-all duration-300">
+						<h3 class="text-2xl font-bold mb-4 text-[#ffbb01]">Visión</h3>
+						<p class="text-gray-400">
+							Ser el referente líder en México para personalización creativa, 
+							reconocidos por nuestra innovación, calidad y capacitación 
+							excepcional.
+						</p>
+					</div>
+				</div>
+
+				<!-- Valores -->
+				<div class="mt-16">
+					<h2 class="text-3xl font-bold mb-8 text-white text-center">Nuestros Valores</h2>
+					<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="text-center p-6 bg-zinc-900 rounded-xl">
+							<div class="w-12 h-12 mx-auto mb-4 rounded-full bg-[#ffbb01]/10 flex items-center justify-center">
+								<span class="text-2xl">✨</span>
+							</div>
+							<h4 class="font-bold text-white mb-2">Creatividad</h4>
+							<p class="text-gray-400 text-sm">Innovamos en cada proyecto</p>
+						</div>
+						<div class="text-center p-6 bg-zinc-900 rounded-xl">
+							<div class="w-12 h-12 mx-auto mb-4 rounded-full bg-[#ffbb01]/10 flex items-center justify-center">
+								<span class="text-2xl">🏆</span>
+							</div>
+							<h4 class="font-bold text-white mb-2">Calidad</h4>
+							<p class="text-gray-400 text-sm">Materiales y acabados premium</p>
+						</div>
+						<div class="text-center p-6 bg-zinc-900 rounded-xl">
+							<div class="w-12 h-12 mx-auto mb-4 rounded-full bg-[#ffbb01]/10 flex items-center justify-center">
+								<span class="text-2xl">👥</span>
+							</div>
+							<h4 class="font-bold text-white mb-2">Compromiso</h4>
+							<p class="text-gray-400 text-sm">Cumplimos con cada cliente</p>
+						</div>
+						<div class="text-center p-6 bg-zinc-900 rounded-xl">
+							<div class="w-12 h-12 mx-auto mb-4 rounded-full bg-[#ffbb01]/10 flex items-center justify-center">
+								<span class="text-2xl">📚</span>
+							</div>
+							<h4 class="font-bold text-white mb-2">Enseñanza</h4>
+							<p class="text-gray-400 text-sm">Compartimos nuestro conocimiento</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="py-16 px-4 bg-gradient-to-r from-black via-zinc-900 to-black">
+			<div class="max-w-3xl mx-auto text-center">
+				<h2 class="text-3xl font-bold mb-6 text-white">¿Tienes un proyecto en mente?</h2>
+				<p class="text-gray-400 mb-8">
+					Contáctanos y juntos haremos brillar tu idea
+				</p>
+				<a 
+					href="/" 
+					class="inline-block bg-[#ffbb01] text-black px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:shadow-[0_0_30px_rgba(255,187,1,0.8)] transition-all duration-300"
+				>
+					Volver al Inicio
+				</a>
+			</div>
+		</section>
+
+		<footer class="bg-black border-t border-zinc-800 py-8">
+			<div class="max-w-4xl mx-auto px-4 text-center">
+				<p class="text-gray-500">© 2024 Iluminando</p>
+			</div>
+		</footer>
+	</body>
+</html>

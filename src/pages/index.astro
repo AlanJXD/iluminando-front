@@ -1,0 +1,191 @@
+---
+import '../styles/global.css'
+import TopNav from '../components/TopNav'
+import ServicioCard from '../components/ServicioCard'
+import GaleriaExperiencias from '../components/GaleriaExperiencias'
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Iluminando - Especialistas en luces de neón personalizadas y talleres de sublimación" />
+		<title>Iluminando | Luces de Neón y Talleres de Sublimación</title>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Neonderthaw&display=swap" rel="stylesheet" />
+	</head>
+	<body class="bg-white text-gray-900">
+		<TopNav client:load />
+
+		<!-- Hero Section con Imagen de Fondo -->
+		<section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden -mt-20 pt-20">
+			<!-- Imagen de fondo -->
+			<div class="absolute inset-0 -z-10">
+				<img
+					src="/img/img3.jpg"
+					alt="Iluminando Cursos y Talleres"
+					class="w-full h-full object-cover"
+				/>
+				<!-- Overlay oscuro para mejorar legibilidad -->
+				<div class="absolute inset-0 bg-black/80"></div>
+				<!-- Luz radial del neón -->
+				<div class="absolute inset-0 neon-radial-light"></div>
+			</div>
+
+			<div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
+				<h1 class="mb-6 relative">
+					<span class="block text-4xl md:text-6xl lg:text-7xl font-semibold text-white mb-0">
+						Iluminando tus
+					</span>
+					<span class="block text-6xl md:text-8xl lg:text-9xl font-neon text-[#FFD700] neon-glow leading-tight -mt-2">
+						ideas brillantes
+					</span>
+				</h1>
+
+				<p class="text-lg md:text-xl lg:text-2xl text-white max-w-3xl mx-auto mb-12 font-light">
+					Descubre nuestros <span class="font-semibold text-[#ffbb01]">talleres de sublimación</span> y
+					<span class="font-semibold text-[#ffbb01]">cursos de neón</span>
+					donde transformamos tu creatividad en habilidades reales
+				</p>
+
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a
+						href="#cursos"
+						class="bg-[#ffbb01] text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-500 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+					>
+						Ver Cursos y Talleres
+					</a>
+					<a
+						href="#galeria"
+						class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:border-[#ffbb01] hover:bg-[#ffbb01] hover:text-gray-900 transition-all duration-300"
+					>
+						Ver Experiencias
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Sección Cursos y Talleres -->
+		<section id="cursos" class="py-20 px-4">
+			<div class="max-w-7xl mx-auto">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+						CURSOS Y TALLERES PRINCIPALES
+					</h2>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+						Desarrolla nuevas habilidades con nuestros cursos más populares
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<ServicioCard
+						titulo="Sublimación Básica"
+						subtitulo="Curso Introductorio"
+						imagen="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80"
+						descripcion="Aprende las técnicas fundamentales de sublimación y personaliza tus primeros productos con nuestra guía experta paso a paso."
+						client:load
+					/>
+
+					<ServicioCard
+						titulo="Neón LED Flex"
+						subtitulo="Taller Creativo"
+						imagen="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?w=800&q=80"
+						descripcion="Diseña y crea tus propias piezas de neón LED flexible desde cero. Incluye kit de herramientas básico y proyecto personal."
+						client:load
+					/>
+
+					<ServicioCard
+						titulo="Sublimación Avanzada"
+						subtitulo="Nivel Profesional"
+						imagen="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80"
+						descripcion="Domina técnicas profesionales y aprende a trabajar con diferentes superficies. Incluye seguimiento y casos reales de negocio."
+						client:load
+					/>
+				</div>
+
+				<!-- Botón ver más -->
+				<div class="text-center mt-12">
+					<a
+						href="#todos-cursos"
+						class="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-black hover:shadow-xl transition-all duration-300"
+					>
+						Ver Todos los Cursos
+						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección Cómo Vivimos los Cursos y Talleres -->
+		<section id="galeria" class="py-20 px-4 gradient-light">
+			<div class="max-w-7xl mx-auto">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+						CÓMO VIVIMOS LOS CURSOS Y TALLERES
+					</h2>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+						Descubre la experiencia de aprender con nosotros a través de imágenes y videos de nuestros talleres
+					</p>
+				</div>
+
+				<GaleriaExperiencias client:load />
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-gray-50 border-t border-gray-200 py-12">
+			<div class="max-w-7xl mx-auto px-4">
+				<div class="grid md:grid-cols-4 gap-8 mb-8">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">ILUMINANDO</h3>
+						<p class="text-gray-600 text-sm">
+							Aprende las mejores técnicas de neón y sublimación con expertos apasionados por enseñar.
+						</p>
+					</div>
+
+					<div>
+						<h4 class="font-bold text-gray-900 mb-4">Cursos y Talleres</h4>
+						<ul class="space-y-2">
+							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Sublimación Básica</a></li>
+							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Neón LED Flex</a></li>
+							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Sublimación Avanzada</a></li>
+							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Ver Todos</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="font-bold text-gray-900 mb-4">Navegación</h4>
+						<ul class="space-y-2">
+							<li><a href="#inicio" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Inicio</a></li>
+							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Cursos y Talleres</a></li>
+							<li><a href="#trabajos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Trabajos Realizados</a></li>
+							<li><a href="#nosotros" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Nosotros</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="font-bold text-gray-900 mb-4">Contacto</h4>
+						<ul class="space-y-2">
+							<li class="text-gray-600">📍 Ciudad de México</li>
+							<li class="text-gray-600">📞 +52 55 1234 5678</li>
+							<li class="text-gray-600">✉️ info@iluminando.com</li>
+							<li class="text-gray-600">🕐 Lun-Vie: 9am - 7pm</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="border-t border-gray-300 pt-8 text-center">
+					<p class="text-gray-500">© 2024 Iluminando. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
