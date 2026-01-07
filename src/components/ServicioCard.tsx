@@ -26,13 +26,6 @@ export default function ServicioCard({
         />
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-        {/* Badge */}
-        {subtitulo && (
-          <div className="absolute top-4 left-4 bg-[#ffbb01] text-gray-900 px-4 py-1.5 rounded-full text-xs font-bold uppercase">
-            {subtitulo}
-          </div>
-        )}
       </div>
 
       {/* Contenido */}
@@ -46,7 +39,7 @@ export default function ServicioCard({
         </p>
 
         {/* Botón */}
-        <button className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-[#ffbb01] hover:text-gray-900 transition-all duration-300">
+        <button className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-black transition-all duration-300 cursor-pointer">
           Más Información
         </button>
       </div>

@@ -76,9 +76,9 @@ export default function TarjetaCurso({
 
         {/* Botón */}
         <div className="relative overflow-hidden">
-          <a 
+          <a
             href="#inscribirse"
-            className="block w-full text-center border-2 border-[#ffbb01] text-[#ffbb01] py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-[#ffbb01] hover:text-black transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(255,187,1,0.5)]"
+            className="block w-full text-center border-2 border-[#ffbb01] text-[#ffbb01] py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-[#ffbb01] hover:text-black transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(255,187,1,0.5)] cursor-pointer"
           >
             Más Información
           </a>

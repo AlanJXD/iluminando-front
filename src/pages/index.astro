@@ -3,6 +3,8 @@ import '../styles/global.css'
 import TopNav from '../components/TopNav'
 import ServicioCard from '../components/ServicioCard'
 import GaleriaExperiencias from '../components/GaleriaExperiencias'
+import Footer from '../components/Footer'
+import WhatsAppButton from '../components/WhatsAppButton'
 ---
 
 <html lang="es">
@@ -12,7 +14,7 @@ import GaleriaExperiencias from '../components/GaleriaExperiencias'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Iluminando - Especialistas en luces de neón personalizadas y talleres de sublimación" />
-		<title>Iluminando | Luces de Neón y Talleres de Sublimación</title>
+		<title>Iluminando</title>
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,13 +58,13 @@ import GaleriaExperiencias from '../components/GaleriaExperiencias'
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
 					<a
 						href="#cursos"
-						class="bg-[#ffbb01] text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-500 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+						class="bg-[#ffbb01] text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-500 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
 					>
 						Ver Cursos y Talleres
 					</a>
 					<a
 						href="#galeria"
-						class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:border-[#ffbb01] hover:bg-[#ffbb01] hover:text-gray-900 transition-all duration-300"
+						class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:border-[#ffbb01] hover:bg-[#ffbb01] hover:text-gray-900 transition-all duration-300 cursor-pointer"
 					>
 						Ver Experiencias
 					</a>
@@ -113,7 +115,7 @@ import GaleriaExperiencias from '../components/GaleriaExperiencias'
 				<div class="text-center mt-12">
 					<a
 						href="#todos-cursos"
-						class="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-black hover:shadow-xl transition-all duration-300"
+						class="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-black hover:shadow-xl transition-all duration-300 cursor-pointer"
 					>
 						Ver Todos los Cursos
 						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,51 +143,9 @@ import GaleriaExperiencias from '../components/GaleriaExperiencias'
 		</section>
 
 		<!-- Footer -->
-		<footer class="bg-gray-50 border-t border-gray-200 py-12">
-			<div class="max-w-7xl mx-auto px-4">
-				<div class="grid md:grid-cols-4 gap-8 mb-8">
-					<div>
-						<h3 class="text-2xl font-bold text-gray-900 mb-4">ILUMINANDO</h3>
-						<p class="text-gray-600 text-sm">
-							Aprende las mejores técnicas de neón y sublimación con expertos apasionados por enseñar.
-						</p>
-					</div>
+		<Footer />
 
-					<div>
-						<h4 class="font-bold text-gray-900 mb-4">Cursos y Talleres</h4>
-						<ul class="space-y-2">
-							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Sublimación Básica</a></li>
-							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Neón LED Flex</a></li>
-							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Sublimación Avanzada</a></li>
-							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Ver Todos</a></li>
-						</ul>
-					</div>
-
-					<div>
-						<h4 class="font-bold text-gray-900 mb-4">Navegación</h4>
-						<ul class="space-y-2">
-							<li><a href="#inicio" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Inicio</a></li>
-							<li><a href="#cursos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Cursos y Talleres</a></li>
-							<li><a href="#trabajos" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Trabajos Realizados</a></li>
-							<li><a href="#nosotros" class="text-gray-600 hover:text-[#ffbb01] transition-colors">Nosotros</a></li>
-						</ul>
-					</div>
-
-					<div>
-						<h4 class="font-bold text-gray-900 mb-4">Contacto</h4>
-						<ul class="space-y-2">
-							<li class="text-gray-600">📍 Ciudad de México</li>
-							<li class="text-gray-600">📞 +52 55 1234 5678</li>
-							<li class="text-gray-600">✉️ info@iluminando.com</li>
-							<li class="text-gray-600">🕐 Lun-Vie: 9am - 7pm</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="border-t border-gray-300 pt-8 text-center">
-					<p class="text-gray-500">© 2024 Iluminando. Todos los derechos reservados.</p>
-				</div>
-			</div>
-		</footer>
+		<!-- WhatsApp Button -->
+		<WhatsAppButton client:load />
 	</body>
 </html>

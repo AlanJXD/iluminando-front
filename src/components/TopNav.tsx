@@ -51,7 +51,7 @@ export default function TopNav() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-[#ffbb01] transition-colors duration-300 p-2"
+              className="text-white hover:text-[#ffbb01] transition-colors duration-300 p-2 cursor-pointer"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
