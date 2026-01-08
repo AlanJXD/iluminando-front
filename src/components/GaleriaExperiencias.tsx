@@ -17,37 +17,37 @@ export default function GaleriaExperiencias() {
   const mediaItems: MediaItem[] = [
     {
       tipo: 'imagen',
-      url: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80',
+      url: '/img/img4.jpg',
       titulo: 'Taller de Sublimación',
       descripcion: 'Estudiantes creando sus primeros diseños'
     },
     {
       tipo: 'imagen',
-      url: 'https://images.unsplash.com/photo-1551650993-c0d0a97ec69d?w=800&q=80',
+      url: '/img/img5.jpg',
       titulo: 'Neón LED Creativo',
       descripcion: 'Proceso de diseño de letreros luminosos'
     },
     {
       tipo: 'imagen',
-      url: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80',
+      url: '/img/img6.jpg',
       titulo: 'Proyectos Terminados',
       descripcion: 'Galería de trabajos de nuestros estudiantes'
     },
     {
       tipo: 'imagen',
-      url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
+      url: '/img/img7.jpg',
       titulo: 'Ambiente de Aprendizaje',
       descripcion: 'Grupos colaborativos en acción'
     },
     {
       tipo: 'imagen',
-      url: 'https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?w=800&q=80',
+      url: '/img/img8.jpg',
       titulo: 'Técnicas Avanzadas',
       descripcion: 'Masterclass de sublimación profesional'
     },
     {
       tipo: 'imagen',
-      url: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
+      url: '/img/img9.jpg',
       titulo: 'Certificación',
       descripcion: 'Entrega de certificados a graduados'
     },
@@ -115,7 +115,7 @@ export default function GaleriaExperiencias() {
               setIsOpening(true);
               setMediaSeleccionado(index);
             }}
-            className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-hard transition-all duration-300 cursor-pointer bg-white"
+            className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer bg-white"
           >
             {/* Imagen */}
             <div className="aspect-[4/3] overflow-hidden">

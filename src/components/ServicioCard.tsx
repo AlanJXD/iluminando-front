@@ -16,7 +16,7 @@ export default function ServicioCard({
   precio
 }: ServicioCardProps) {
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden shadow-medium hover:shadow-hard transition-all duration-300 hover:-translate-y-2">
+    <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
       {/* Imagen */}
       <div className="relative h-64 overflow-hidden">
         <img

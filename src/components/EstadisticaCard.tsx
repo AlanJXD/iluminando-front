@@ -24,7 +24,7 @@ export default function EstadisticaCard({
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-soft p-6 transition-all duration-300 hover:shadow-medium">
+    <div className="bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-lg">
       <div className="flex justify-between items-start mb-4">
         <h4 className="text-lg font-bold text-gray-900">{titulo}</h4>
         <span className={`text-sm font-medium ${tendenciaColor[tendencia]}`}>
