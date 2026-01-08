@@ -1,0 +1,182 @@
+---
+import '../styles/global.css'
+import TopNav from '../components/TopNav'
+import Footer from '../components/Footer'
+import WhatsAppButton from '../components/WhatsAppButton'
+import GaleriaMedios from '../components/GaleriaMedios'
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Descubre nuestros trabajos realizados en sublimación y letreros neón" />
+		<title>Trabajos Realizados | Iluminando</title>
+	</head>
+	<body class="bg-white text-gray-900">
+		<TopNav client:load />
+
+		<!-- Hero Banner -->
+		<section class="relative w-full h-[400px] md:h-[500px] overflow-hidden -mt-20 pt-20">
+			<img
+				src="/img/img3.jpg"
+				alt="Banner Trabajos Realizados"
+				class="w-full h-full object-cover absolute inset-0"
+			/>
+			<div class="absolute inset-0 bg-black/60"></div>
+
+			<div class="relative z-10 h-full flex items-center justify-center">
+				<div class="max-w-4xl mx-auto text-center px-4">
+					<h1 class="text-5xl md:text-6xl font-bold mb-6">
+						<span class="text-white">TRABAJOS</span>
+						<span class="text-[#ffbb01] block">REALIZADOS</span>
+					</h1>
+					<p class="text-xl text-white">
+						Descubre las creaciones de nuestros clientes y proyectos destacados
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Descripción -->
+		<section class="px-4" style="padding-top: 5rem; padding-bottom: 3rem;">
+			<div class="max-w-4xl mx-auto text-center">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+					Inspiración que <span class="text-[#ffbb01]">Brilla</span>
+				</h2>
+				<p class="text-lg text-gray-600 leading-relaxed">
+					Cada proyecto cuenta una historia única. Desde letreros neón personalizados hasta
+					sublimaciones creativas, nuestros clientes han transformado sus ideas en realidad.
+					Aquí compartimos algunos de nuestros trabajos más destacados.
+				</p>
+			</div>
+		</section>
+
+		<!-- Galería de Trabajos -->
+		<section class="px-4" style="padding-bottom: 5rem;">
+			<div class="max-w-7xl mx-auto">
+				<GaleriaMedios client:load />
+			</div>
+		</section>
+
+		<!-- Sección de Categorías -->
+		<section class="px-4" style="padding-bottom: 5rem;">
+			<div class="max-w-7xl mx-auto">
+				<h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Categorías de Trabajos</h3>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					<!-- Categoría 1: Letreros Neón -->
+					<div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+						<div class="relative h-64 overflow-hidden">
+							<img
+								src="/img/curso1.jpg"
+								alt="Letreros Neón"
+								class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+							<div class="absolute bottom-4 left-4 right-4">
+								<h4 class="text-2xl font-bold text-white mb-2">Letreros Neón</h4>
+								<p class="text-gray-200 text-sm">Diseños luminosos personalizados</p>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-gray-600 mb-4">
+								Creaciones únicas de neón LED que iluminan espacios comerciales y hogares.
+							</p>
+							<div class="flex items-center gap-2 text-[#ffbb01] font-semibold">
+								<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+								</svg>
+								<span>Ver proyectos</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Categoría 2: Sublimación -->
+					<div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+						<div class="relative h-64 overflow-hidden">
+							<img
+								src="/img/curso2.jpg"
+								alt="Sublimación"
+								class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+							<div class="absolute bottom-4 left-4 right-4">
+								<h4 class="text-2xl font-bold text-white mb-2">Sublimación</h4>
+								<p class="text-gray-200 text-sm">Textiles y productos personalizados</p>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-gray-600 mb-4">
+								Tazas, textiles y más, personalizados con técnicas de sublimación profesional.
+							</p>
+							<div class="flex items-center gap-2 text-[#ffbb01] font-semibold">
+								<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+								</svg>
+								<span>Ver proyectos</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Categoría 3: Proyectos Especiales -->
+					<div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+						<div class="relative h-64 overflow-hidden">
+							<img
+								src="/img/curso3.jpg"
+								alt="Proyectos Especiales"
+								class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+							<div class="absolute bottom-4 left-4 right-4">
+								<h4 class="text-2xl font-bold text-white mb-2">Proyectos Especiales</h4>
+								<p class="text-gray-200 text-sm">Trabajos únicos y personalizados</p>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-gray-600 mb-4">
+								Proyectos a medida que combinan creatividad, técnica y pasión.
+							</p>
+							<div class="flex items-center gap-2 text-[#ffbb01] font-semibold">
+								<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+								</svg>
+								<span>Ver proyectos</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to Action -->
+		<section class="px-4" style="padding-bottom: 5rem;">
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-gray-900 rounded-3xl p-12 text-center">
+					<h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
+						¿Tienes un proyecto en mente?
+					</h3>
+					<p class="text-xl text-gray-300 mb-8">
+						Convierte tu idea en realidad. Contáctanos para cotizar tu proyecto personalizado.
+					</p>
+					<a
+						href="https://wa.me/523325358437"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-block bg-[#ffbb01] text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-500 transition-all duration-300 hover:shadow-lg"
+					>
+						Cotiza tu Proyecto
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<Footer />
+
+		<!-- WhatsApp Button -->
+		<WhatsAppButton client:load />
+	</body>
+</html>

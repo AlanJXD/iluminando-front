@@ -10,8 +10,8 @@ export default function TopNav() {
 
   const navLinks: NavLink[] = [
     { name: 'Inicio', href: '/' },
-    { name: 'Cursos y Talleres', href: 'cursos' },
-    { name: 'Trabajos Realizados', href: 'trabajos' },
+    { name: 'Cursos y Talleres', href: 'talleres' },
+    { name: 'Trabajos Realizados', href: 'trabajos-realizados' },
     { name: 'Nosotros', href: 'nosotros' },
   ];
 

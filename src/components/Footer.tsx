@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-300 pt-8 text-center">
-          <p className="text-gray-500">© 2024 Iluminando. Todos los derechos reservados.</p>
+          <p className="text-gray-500">© 2026 Iluminando. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

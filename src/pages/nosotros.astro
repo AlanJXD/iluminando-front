@@ -1,0 +1,117 @@
+---
+import '../styles/global.css'
+import TopNav from '../components/TopNav'
+import Footer from '../components/Footer'
+import WhatsAppButton from '../components/WhatsAppButton'
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Conoce nuestra historia y experiencia en talleres de sublimación y neón" />
+		<title>Nosotros | Iluminando</title>
+	</head>
+	<body class="bg-white text-gray-900">
+		<TopNav client:load />
+
+		<!-- Hero Title -->
+		<section class="pt-12 px-4" >
+			<div class="max-w-7xl mx-auto text-center">
+				<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+					<span class="text-gray-900">Iluminando</span>
+					<span class="text-[#ffbb01] block mt-2">Tu Creatividad</span>
+				</h1>
+			</div>
+		</section>
+
+		<!-- Imagen Principal -->
+		<section class="px-4" style="padding-top: 2rem; padding-bottom: 2rem;">
+			<div class="max-w-7xl mx-auto">
+				<div class="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl shadow-2xl">
+					<img
+						src="/img/img12.jpg"
+						alt="Iluminando Talleres"
+						class="w-full h-full object-cover"
+					/>
+					<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Título y Texto -->
+		<section class="px-4" style="padding-bottom: 5rem;">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid md:grid-cols-2 items-start" style="gap: 4rem;">
+					<!-- Título a la izquierda -->
+					<div>
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+							Aprende y
+							<span class="text-[#ffbb01] block mt-2">Emprende</span>
+						</h2>
+					</div>
+
+					<!-- Texto a la derecha -->
+					<div>
+						<p class="text-lg text-gray-600 leading-relaxed" style="margin-bottom: 2rem;">
+							En Iluminando, creemos que cada persona tiene el potencial de crear algo extraordinario.
+							Desde nuestros inicios, nos hemos dedicado a compartir conocimiento y técnicas profesionales
+							de sublimación y creación de letreros neón.
+						</p>
+						<p class="text-lg text-gray-600 leading-relaxed" style="margin-bottom: 2rem;">
+							Nuestro equipo de expertos no solo enseña, inspira. Cada taller es una experiencia única
+							donde la teoría se encuentra con la práctica, y donde los sueños se transforman en proyectos reales.
+						</p>
+						<p class="text-lg text-gray-600 leading-relaxed">
+							Nos enorgullece ver cómo nuestros estudiantes no solo aprenden una nueva habilidad,
+							sino que descubren su verdadero potencial creativo y emprendedor.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Estadísticas -->
+		<section class="px-4" style="padding-bottom: 5rem;">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid md:grid-cols-2 lg:grid-cols-4" style="gap: 3rem;">
+					<!-- Widget 1 -->
+					<div class="text-center" style="padding: 2rem 0;">
+						<div class="text-6xl md:text-7xl font-bold text-[#ffbb01]" style="margin-bottom: 1.5rem;">+1000</div>
+						<div class="text-xl text-gray-900 font-semibold" style="margin-bottom: 0.75rem;">Clientes Satisfechos</div>
+						<p class="text-gray-600 text-sm">Han confiado en nuestros talleres</p>
+					</div>
+
+					<!-- Widget 2 -->
+					<div class="text-center" style="padding: 2rem 0;">
+						<div class="text-6xl md:text-7xl font-bold text-[#ffbb01]" style="margin-bottom: 1.5rem;">5+</div>
+						<div class="text-xl text-gray-900 font-semibold" style="margin-bottom: 0.75rem;">Años de Experiencia</div>
+						<p class="text-gray-600 text-sm">Enseñando y perfeccionando técnicas</p>
+					</div>
+
+					<!-- Widget 3 -->
+					<div class="text-center" style="padding: 2rem 0;">
+						<div class="text-6xl md:text-7xl font-bold text-[#ffbb01]" style="margin-bottom: 1.5rem;">50+</div>
+						<div class="text-xl text-gray-900 font-semibold" style="margin-bottom: 0.75rem;">Talleres Impartidos</div>
+						<p class="text-gray-600 text-sm">De sublimación y letreros neón</p>
+					</div>
+
+					<!-- Widget 4 -->
+					<div class="text-center" style="padding: 2rem 0;">
+						<div class="text-6xl md:text-7xl font-bold text-[#ffbb01]" style="margin-bottom: 1.5rem;">98%</div>
+						<div class="text-xl text-gray-900 font-semibold" style="margin-bottom: 0.75rem;">Satisfacción</div>
+						<p class="text-gray-600 text-sm">De nuestros estudiantes</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<Footer />
+
+		<!-- WhatsApp Button -->
+		<WhatsAppButton client:load />
+	</body>
+</html>
